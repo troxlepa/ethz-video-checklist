@@ -1,2 +1,4 @@
 # ethz-video-checklist
-A greasemonkey script to indicate which ETH podcasts you've already watched.
+A simple Greasemonkey script to indicate which ETH podcasts (video.ethz.ch) you've already watched. All changes are saved in localStorage.
+
+![Script Screenshot](https://raw.githubusercontent.com/troxlepa/ethz-video-checklist/master/ethz-video-checklist.png)
