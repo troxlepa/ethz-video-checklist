@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name     ETHZ VideoWatch
+// @name     ETHZ Video Checklist
 // @version  1
 // @require http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js
 // @include  https://video.ethz.ch/*
@@ -50,7 +50,7 @@ function appendIcon (jNode) {
         icon = '<a title="watched status" class="custom_icon" href="javascript:void(0)" id="'+curr_idx+'"></a>';
       }
       $(curr_n).prepend(icon);
-			curr_n.addEventListener('click',function(){$(curr_n).children().first().toggleClass('notwatched');
+	 curr_n.firstChild.addEventListener('click',function(){$(curr_n).children().first().toggleClass('notwatched');
          (async () => {
             let count_before = await GM.getValue(curr_idx, 0);
             count_before=count_before==1?0:1;
